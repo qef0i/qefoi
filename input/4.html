@@ -16,16 +16,16 @@
 				<ul>
 					<input type="hidden" value="사이트를 통한 직접 로그인">
 					<li>
-						<label>아이디 <input type="text" id="user_id"></label>
+						<label>아이디 <input type="text" id="user_id" autofocus required placeholder="4자 ~ 10자 사이, 공백없이"></label>
 					</li>
 					<li>
-						<label>이메일 <input type="email" id="user_email"></label>
+						<label>이메일 <input type="email" id="user_email" required></label>
 					</li>
 					<li>
-						<label>비밀번호 <input type="password" id="pw"></label>
+						<label>비밀번호 <input type="password" id="pw" required placeholder="문자와 숫자, 특수 기호 포함"></label>
 					</li>
 					<li>
-						<label>비밀번호 확인 <input type="password" id="check_pw"></label>
+						<label>비밀번호 확인 <input type="password" id="check_pw" required></label>
 					</li>
 				</ul>
 			</fieldset>
@@ -34,7 +34,7 @@
 					이벤트와 새로운 소식
 				</legend>
 				<label><input type="radio" name="event" value="O"> 메일 수신</label>
-				<label><input type="radio" name="event" value="X"> 메일 수신</label>
+				<label><input type="radio" name="event" value="X" checked> 메일 수신 안 함</label>
 			</fieldset>
 			<div id="buttons">
 				<input type="submit" value="가입하기">
