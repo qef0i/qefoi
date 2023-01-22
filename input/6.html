@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>input 속성</title>
+	</head>
+	<body>
+		<form>
+			<fieldset>
+				<legend>
+					<b>배송 정보</b>
+				</legend>
+				<ul>
+					<li><label>주문 상품 <input type="text" id="prod" value="상품용 3KG" readonly></label></li>
+					<li><label>이름 <input type="text" id="user-name" autofocus required></label></li>
+					<li><label>배송 주소 <input type="text" id="address" required></label></li>
+					<li><label>이메일 <input type="email" id="user-email"></label></li>
+					<li><label>연락처 <input type="tel" id="user-tel" placeholder="하이픈 빼고 입력해 주세요.(01012345678)"></label></li>
+					<li><label>배송 지정 <input type="date" id="d-day"><small>(주문일로부터 최소 3일 이후)</small></label></li>
+				</ul>
+			</fieldset>
+			<div>
+				<input type="submit" value="주문하기">
+				<input type="reset" value="취소하기">
+			</div>
+		</form>
+	</body>
+</html>
